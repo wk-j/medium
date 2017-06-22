@@ -1,5 +1,5 @@
 
-var mainProject = "Soruce/Medium/Medium.csproj";
+var mainProject = "Source/Medium/Medium.csproj";
 
 Task("Watch").Does(() => {
     StartProcess("watchman-make", new ProcessSettings {
