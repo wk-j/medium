@@ -11,6 +11,7 @@ let run (data: int64 list) target =
       { for a1 in data do
         for a2 in data do
         for a3 in data do
+        where (a1 <> a2 && a1 <> a3 && a2 <> a3)
         let p = a1 * a2 * a3
         let diff = abs(target - p)
         select { P = p; Diff = diff } } 
@@ -37,6 +38,7 @@ let largeData =
 let show data target = 
     let rs = run data target
     printfn "%A" rs.P
+
 
 #time
 show exData    exTarget

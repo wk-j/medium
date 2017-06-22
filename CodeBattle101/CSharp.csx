@@ -1,16 +1,14 @@
 (Int64, Int64) run(IEnumerable<Int64> data, Int64 target) {
-    var len = data.Count();
-    var sec = len / 3;
-    var data1 = data.Take(sec);
-    var data2 = data.Skip(sec).Take(sec);
-    var data3 = data.Skip(sec * 2 + 3).Take(sec);
     var query = 
-        from d1 in data1
-        from d2 in data2
-        from d3 in data3
+        from d1 in data
+        from d2 in data
+        from d3 in data
+        where (d1 != d2 && d1 != d3 && d2 != d3)
         let p = d1 * d2 * d3      
         let diff = Math.Abs(target - p)
         select new { P = p, Diff = diff };
+
+    Console.WriteLine(query.Count());
     var rs = query.OrderBy(x => x.Diff).First();
     return (rs.P, rs.Diff);
 }
@@ -31,5 +29,9 @@ void show(IEnumerable<Int64> data, Int64 target) {
     Console.WriteLine(rs.Item1);
 }
 
+var exData = new List<Int64> { 1,2,3,4,5};
+var exTarget = 25;
+
+show(exData,    exTarget);
 show(smallData, smallTarget);
 //show(largeData, largeTarget);
