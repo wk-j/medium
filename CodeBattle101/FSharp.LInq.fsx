@@ -22,12 +22,10 @@ let filter (data: int64 list) =
 
     query
       { for a1 in data do
-        for a2 in data do
-        for a3 in data do
-        where (a1 <> a2 && a1 <> a3 && a2 <> a3)
+        for a2 in data.Where(fun x -> x <> a1) do
+        for a3 in data.Where(fun x -> x <> a1 && x <> a2 && a1 <> a2) do
         select (a1,a2,a3)
       }
-
 
 let clean (x: string) = x.Trim() |> Int64.Parse
 
