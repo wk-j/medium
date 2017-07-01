@@ -51,6 +51,6 @@ var smallData = File.ReadAllLines("SmallCase.txt").Select(clean).ToArray();
 var largeTarget = 30470556801191;
 var largeData = File.ReadAllLines("LargeCase.txt").Select(clean).ToArray();
 
-show(exData, exTarget);
+//show(exData, exTarget);
 //show(smallData, smallTarget);
 show(largeData, largeTarget);
