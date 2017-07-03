@@ -2,3 +2,5 @@ tools
 bin
 obj
 packages
+.shake
+_build
