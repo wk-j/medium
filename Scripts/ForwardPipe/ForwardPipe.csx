@@ -1,5 +1,5 @@
-#r "../Source/Medium/bin/Debug/netstandard1.4/Medium.dll"
-#r "../packages/System.Runtime/lib/net462/System.Runtime.dll"
+#r "../../Source/Medium/bin/Debug/netstandard1.4/Medium.dll"
+#r "../../packages/System.Runtime/lib/net462/System.Runtime.dll"
 
 using Medium;
 
