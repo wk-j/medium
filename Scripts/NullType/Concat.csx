@@ -31,3 +31,5 @@ T.Concat(1, null);
 
 T.F1("");
 T.F1(new [] { 1 });
+
+string.Concat(null, null);
