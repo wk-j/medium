@@ -21,4 +21,8 @@ let rec interpret = function
         Console.WriteLine s
         next |> interpret
 
-program |> interpret
+let pirvate mapI f = function
+    | ReadLine next -> ReadLine (next >> f)
+    | WriteLine (x, next) -> WriteLine(x, next |> f)
+
+//program |> interpret
