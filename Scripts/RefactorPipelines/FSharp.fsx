@@ -14,7 +14,6 @@ let twitterHandles (authors : seq<Author>, company : string) =
            |> Seq.map(fun a -> a.TwitterHandle )
            |> Seq.filter (isNull >> not)
 
-
 let s = Seq.ofList list
 
 twitterHandles (s,"C1") |> printfn "%A"
