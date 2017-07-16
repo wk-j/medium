@@ -1,0 +1,1 @@
+int X() { yield return 100 + 100; };
