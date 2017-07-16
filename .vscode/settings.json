@@ -8,6 +8,8 @@
         "**/.DS_Store": true,
         "packages": true,
         "tools": true,
-        ".paket": true
+        ".paket": true,
+        "**/bin": true,
+        "**/obj": true
     }
 }
