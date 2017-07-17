@@ -1,0 +1,654 @@
+// ***** BenchmarkRunner: Start   *****
+// Found benchmarks:
+//   PTest.Standard: DefaultJob
+//   PTest.WithAndReturn: DefaultJob
+//   PTest.TryCatch: DefaultJob
+
+// Validating benchmarks:
+// **************************
+// Benchmark: PTest.Standard: DefaultJob
+// *** Generate *** 
+Unable to find .sln file. Will use current directory /Users/wk/Source/github/Medium to search for project file. If you don't use .sln file on purpose it should not be a problem.
+// Result = Success
+// BinariesDirectoryPath = /Users/wk/Source/github/Medium/Source/Propagation/bin/Release/netcoreapp1.1/BDN.Generated/bin/Release/netcoreapp1.1
+
+// *** Build ***
+// dotnet restore took 2.52s
+// dotnet build took 4.27s
+// Result = Success
+
+// *** Execute ***
+// Launch: 1 / 1
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 4.6.25009.03, 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+Pilot  1: 16 op, 424347.00 ns, 26.5217 us/op
+Pilot  2: 32 op, 13401.00 ns, 418.7813 ns/op
+Pilot  3: 64 op, 4931.00 ns, 77.0469 ns/op
+Pilot  4: 128 op, 4066.00 ns, 31.7656 ns/op
+Pilot  5: 256 op, 3986.00 ns, 15.5703 ns/op
+Pilot  6: 512 op, 7110.00 ns, 13.8867 ns/op
+Pilot  7: 1024 op, 11819.00 ns, 11.5420 ns/op
+Pilot  8: 2048 op, 25543.00 ns, 12.4722 ns/op
+Pilot  9: 4096 op, 38169.00 ns, 9.3186 ns/op
+Pilot 10: 8192 op, 88672.00 ns, 10.8242 ns/op
+Pilot 11: 16384 op, 252702.00 ns, 15.4237 ns/op
+Pilot 12: 32768 op, 490031.00 ns, 14.9546 ns/op
+Pilot 13: 65536 op, 1411619.00 ns, 21.5396 ns/op
+Pilot 14: 131072 op, 1858209.00 ns, 14.1770 ns/op
+Pilot 15: 262144 op, 2755595.00 ns, 10.5118 ns/op
+Pilot 16: 524288 op, 4642264.00 ns, 8.8544 ns/op
+Pilot 17: 1048576 op, 10504488.00 ns, 10.0179 ns/op
+Pilot 18: 2097152 op, 24405352.00 ns, 11.6374 ns/op
+Pilot 19: 4194304 op, 47329823.00 ns, 11.2843 ns/op
+Pilot 20: 8388608 op, 81762135.00 ns, 9.7468 ns/op
+Pilot 21: 16777216 op, 158273128.00 ns, 9.4338 ns/op
+Pilot 22: 33554432 op, 336026494.00 ns, 10.0144 ns/op
+Pilot 23: 67108864 op, 650885940.00 ns, 9.6990 ns/op
+
+IdleWarmup  1: 67108864 op, 157403479.00 ns, 2.3455 ns/op
+IdleWarmup  2: 67108864 op, 151966500.00 ns, 2.2645 ns/op
+IdleWarmup  3: 67108864 op, 152543855.00 ns, 2.2731 ns/op
+IdleWarmup  4: 67108864 op, 150663825.00 ns, 2.2451 ns/op
+IdleWarmup  5: 67108864 op, 153872152.00 ns, 2.2929 ns/op
+IdleWarmup  6: 67108864 op, 145630879.00 ns, 2.1701 ns/op
+
+IdleTarget  1: 67108864 op, 149794299.00 ns, 2.2321 ns/op
+IdleTarget  2: 67108864 op, 153048222.00 ns, 2.2806 ns/op
+IdleTarget  3: 67108864 op, 151635924.00 ns, 2.2596 ns/op
+IdleTarget  4: 67108864 op, 154156396.00 ns, 2.2971 ns/op
+IdleTarget  5: 67108864 op, 149977764.00 ns, 2.2348 ns/op
+IdleTarget  6: 67108864 op, 149429210.00 ns, 2.2267 ns/op
+IdleTarget  7: 67108864 op, 152817202.00 ns, 2.2772 ns/op
+IdleTarget  8: 67108864 op, 148916177.00 ns, 2.2190 ns/op
+IdleTarget  9: 67108864 op, 151351206.00 ns, 2.2553 ns/op
+IdleTarget 10: 67108864 op, 150358395.00 ns, 2.2405 ns/op
+IdleTarget 11: 67108864 op, 153466714.00 ns, 2.2868 ns/op
+IdleTarget 12: 67108864 op, 155596182.00 ns, 2.3186 ns/op
+IdleTarget 13: 67108864 op, 151086344.00 ns, 2.2514 ns/op
+IdleTarget 14: 67108864 op, 151096112.00 ns, 2.2515 ns/op
+IdleTarget 15: 67108864 op, 150061274.00 ns, 2.2361 ns/op
+
+MainWarmup  1: 67108864 op, 650957475.00 ns, 9.7000 ns/op
+MainWarmup  2: 67108864 op, 622413331.00 ns, 9.2747 ns/op
+MainWarmup  3: 67108864 op, 659661922.00 ns, 9.8297 ns/op
+MainWarmup  4: 67108864 op, 653432495.00 ns, 9.7369 ns/op
+MainWarmup  5: 67108864 op, 663296891.00 ns, 9.8839 ns/op
+MainWarmup  6: 67108864 op, 652903884.00 ns, 9.7290 ns/op
+
+MainTarget  1: 67108864 op, 620712033.00 ns, 9.2493 ns/op
+MainTarget  2: 67108864 op, 637461903.00 ns, 9.4989 ns/op
+MainTarget  3: 67108864 op, 620706752.00 ns, 9.2493 ns/op
+MainTarget  4: 67108864 op, 645426451.00 ns, 9.6176 ns/op
+MainTarget  5: 67108864 op, 617143113.00 ns, 9.1961 ns/op
+MainTarget  6: 67108864 op, 629086439.00 ns, 9.3741 ns/op
+MainTarget  7: 67108864 op, 680273084.00 ns, 10.1369 ns/op
+MainTarget  8: 67108864 op, 628157392.00 ns, 9.3603 ns/op
+MainTarget  9: 67108864 op, 619877458.00 ns, 9.2369 ns/op
+MainTarget 10: 67108864 op, 636180261.00 ns, 9.4798 ns/op
+MainTarget 11: 67108864 op, 630165164.00 ns, 9.3902 ns/op
+MainTarget 12: 67108864 op, 631519105.00 ns, 9.4104 ns/op
+MainTarget 13: 67108864 op, 627325984.00 ns, 9.3479 ns/op
+MainTarget 14: 67108864 op, 635151441.00 ns, 9.4645 ns/op
+MainTarget 15: 67108864 op, 622777163.00 ns, 9.2801 ns/op
+
+Result  1: 67108864 op, 469192604.93 ns, 6.9915 ns/op
+Result  2: 67108864 op, 485942474.93 ns, 7.2411 ns/op
+Result  3: 67108864 op, 469187323.93 ns, 6.9914 ns/op
+Result  4: 67108864 op, 493907022.93 ns, 7.3598 ns/op
+Result  5: 67108864 op, 465623684.93 ns, 6.9383 ns/op
+Result  6: 67108864 op, 477567010.93 ns, 7.1163 ns/op
+Result  7: 67108864 op, 476637963.93 ns, 7.1025 ns/op
+Result  8: 67108864 op, 468358029.93 ns, 6.9791 ns/op
+Result  9: 67108864 op, 484660832.93 ns, 7.2220 ns/op
+Result 10: 67108864 op, 478645735.93 ns, 7.1324 ns/op
+Result 11: 67108864 op, 479999676.93 ns, 7.1526 ns/op
+Result 12: 67108864 op, 475806555.93 ns, 7.0901 ns/op
+Result 13: 67108864 op, 483632012.93 ns, 7.2067 ns/op
+Result 14: 67108864 op, 471257734.93 ns, 7.0223 ns/op
+GC:  15345 0 0 0 1006632960
+
+
+Mean = 7.1104 ns, StdErr = 0.0320 ns (0.45%); N = 14, StdDev = 0.1198 ns
+Min = 6.9383 ns, Q1 = 6.9915 ns, Median = 7.1094 ns, Q3 = 7.2067 ns, Max = 7.3598 ns
+IQR = 0.2152 ns, LowerFence = 6.6688 ns, UpperFence = 7.5294 ns
+ConfidenceInterval = [6.9752 ns; 7.2456 ns] (CI 99.9%), Margin = 0.1352 ns (1.90% of Mean)
+Skewness = 0.36, Kurtosis = 2.09
+
+
+// **************************
+// Benchmark: PTest.WithAndReturn: DefaultJob
+// *** Generate *** 
+Unable to find .sln file. Will use current directory /Users/wk/Source/github/Medium to search for project file. If you don't use .sln file on purpose it should not be a problem.
+// Result = Success
+// BinariesDirectoryPath = /Users/wk/Source/github/Medium/Source/Propagation/bin/Release/netcoreapp1.1/BDN.Generated/bin/Release/netcoreapp1.1
+
+// *** Build ***
+// dotnet restore took 2.44s
+// dotnet build took 4.06s
+// Result = Success
+
+// *** Execute ***
+// Launch: 1 / 1
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 4.6.25009.03, 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+Pilot  1: 16 op, 365235.00 ns, 22.8272 us/op
+Pilot  2: 32 op, 10868.00 ns, 339.6250 ns/op
+Pilot  3: 64 op, 5810.00 ns, 90.7813 ns/op
+Pilot  4: 128 op, 6970.00 ns, 54.4531 ns/op
+Pilot  5: 256 op, 10517.00 ns, 41.0820 ns/op
+Pilot  6: 512 op, 14915.00 ns, 29.1309 ns/op
+Pilot  7: 1024 op, 32846.00 ns, 32.0762 ns/op
+Pilot  8: 2048 op, 52947.00 ns, 25.8530 ns/op
+Pilot  9: 4096 op, 131014.00 ns, 31.9858 ns/op
+Pilot 10: 8192 op, 212688.00 ns, 25.9629 ns/op
+Pilot 11: 16384 op, 517253.00 ns, 31.5706 ns/op
+Pilot 12: 32768 op, 1061963.00 ns, 32.4085 ns/op
+Pilot 13: 65536 op, 2009524.00 ns, 30.6629 ns/op
+Pilot 14: 131072 op, 3368335.00 ns, 25.6984 ns/op
+Pilot 15: 262144 op, 6441737.00 ns, 24.5733 ns/op
+Pilot 16: 524288 op, 14206204.00 ns, 27.0962 ns/op
+Pilot 17: 1048576 op, 28735802.00 ns, 27.4046 ns/op
+Pilot 18: 2097152 op, 57471270.00 ns, 27.4044 ns/op
+Pilot 19: 4194304 op, 111093601.00 ns, 26.4868 ns/op
+Pilot 20: 8388608 op, 223911810.00 ns, 26.6924 ns/op
+Pilot 21: 16777216 op, 436101953.00 ns, 25.9937 ns/op
+Pilot 22: 33554432 op, 858732912.00 ns, 25.5922 ns/op
+
+IdleWarmup  1: 33554432 op, 75969630.00 ns, 2.2641 ns/op
+IdleWarmup  2: 33554432 op, 75174312.00 ns, 2.2404 ns/op
+IdleWarmup  3: 33554432 op, 80135652.00 ns, 2.3882 ns/op
+IdleWarmup  4: 33554432 op, 76174254.00 ns, 2.2702 ns/op
+IdleWarmup  5: 33554432 op, 75764176.00 ns, 2.2579 ns/op
+IdleWarmup  6: 33554432 op, 77238884.00 ns, 2.3019 ns/op
+IdleWarmup  7: 33554432 op, 78464867.00 ns, 2.3384 ns/op
+IdleWarmup  8: 33554432 op, 76303009.00 ns, 2.2740 ns/op
+
+IdleTarget  1: 33554432 op, 76433146.00 ns, 2.2779 ns/op
+IdleTarget  2: 33554432 op, 80244642.00 ns, 2.3915 ns/op
+IdleTarget  3: 33554432 op, 79506422.00 ns, 2.3695 ns/op
+IdleTarget  4: 33554432 op, 75779308.00 ns, 2.2584 ns/op
+IdleTarget  5: 33554432 op, 78819147.00 ns, 2.3490 ns/op
+IdleTarget  6: 33554432 op, 77487140.00 ns, 2.3093 ns/op
+IdleTarget  7: 33554432 op, 77598647.00 ns, 2.3126 ns/op
+IdleTarget  8: 33554432 op, 74200481.00 ns, 2.2113 ns/op
+IdleTarget  9: 33554432 op, 76732482.00 ns, 2.2868 ns/op
+IdleTarget 10: 33554432 op, 76148693.00 ns, 2.2694 ns/op
+IdleTarget 11: 33554432 op, 76110278.00 ns, 2.2683 ns/op
+IdleTarget 12: 33554432 op, 79077577.00 ns, 2.3567 ns/op
+IdleTarget 13: 33554432 op, 78815811.00 ns, 2.3489 ns/op
+IdleTarget 14: 33554432 op, 77547411.00 ns, 2.3111 ns/op
+IdleTarget 15: 33554432 op, 79594885.00 ns, 2.3721 ns/op
+
+MainWarmup  1: 33554432 op, 892013039.00 ns, 26.5841 ns/op
+MainWarmup  2: 33554432 op, 871991646.00 ns, 25.9874 ns/op
+MainWarmup  3: 33554432 op, 867944417.00 ns, 25.8668 ns/op
+MainWarmup  4: 33554432 op, 861952001.00 ns, 25.6882 ns/op
+MainWarmup  5: 33554432 op, 851426098.00 ns, 25.3745 ns/op
+MainWarmup  6: 33554432 op, 855634959.00 ns, 25.4999 ns/op
+MainWarmup  7: 33554432 op, 886896383.00 ns, 26.4316 ns/op
+MainWarmup  8: 33554432 op, 854851791.00 ns, 25.4766 ns/op
+MainWarmup  9: 33554432 op, 872404060.00 ns, 25.9997 ns/op
+MainWarmup 10: 33554432 op, 864087146.00 ns, 25.7518 ns/op
+
+MainTarget  1: 33554432 op, 873235588.00 ns, 26.0244 ns/op
+MainTarget  2: 33554432 op, 858340621.00 ns, 25.5805 ns/op
+MainTarget  3: 33554432 op, 912274154.00 ns, 27.1879 ns/op
+MainTarget  4: 33554432 op, 866573872.00 ns, 25.8259 ns/op
+MainTarget  5: 33554432 op, 860080596.00 ns, 25.6324 ns/op
+MainTarget  6: 33554432 op, 855671298.00 ns, 25.5010 ns/op
+MainTarget  7: 33554432 op, 866452969.00 ns, 25.8223 ns/op
+MainTarget  8: 33554432 op, 863724911.00 ns, 25.7410 ns/op
+MainTarget  9: 33554432 op, 869792646.00 ns, 25.9218 ns/op
+MainTarget 10: 33554432 op, 864858979.00 ns, 25.7748 ns/op
+MainTarget 11: 33554432 op, 869388654.00 ns, 25.9098 ns/op
+MainTarget 12: 33554432 op, 870646208.00 ns, 25.9473 ns/op
+MainTarget 13: 33554432 op, 863873417.00 ns, 25.7454 ns/op
+MainTarget 14: 33554432 op, 866381618.00 ns, 25.8202 ns/op
+MainTarget 15: 33554432 op, 872384932.00 ns, 25.9991 ns/op
+
+Result  1: 33554432 op, 795629183.33 ns, 23.7116 ns/op
+Result  2: 33554432 op, 780734216.33 ns, 23.2677 ns/op
+Result  3: 33554432 op, 788967467.33 ns, 23.5131 ns/op
+Result  4: 33554432 op, 782474191.33 ns, 23.3195 ns/op
+Result  5: 33554432 op, 778064893.33 ns, 23.1881 ns/op
+Result  6: 33554432 op, 788846564.33 ns, 23.5095 ns/op
+Result  7: 33554432 op, 786118506.33 ns, 23.4282 ns/op
+Result  8: 33554432 op, 792186241.33 ns, 23.6090 ns/op
+Result  9: 33554432 op, 787252574.33 ns, 23.4620 ns/op
+Result 10: 33554432 op, 791782249.33 ns, 23.5969 ns/op
+Result 11: 33554432 op, 793039803.33 ns, 23.6344 ns/op
+Result 12: 33554432 op, 786267012.33 ns, 23.4326 ns/op
+Result 13: 33554432 op, 788775213.33 ns, 23.5073 ns/op
+Result 14: 33554432 op, 794778527.33 ns, 23.6862 ns/op
+GC:  7665 0 0 0 503316480
+
+
+Mean = 23.4904 ns, StdErr = 0.0415 ns (0.18%); N = 14, StdDev = 0.1551 ns
+Min = 23.1881 ns, Q1 = 23.4282 ns, Median = 23.5084 ns, Q3 = 23.6090 ns, Max = 23.7116 ns
+IQR = 0.1808 ns, LowerFence = 23.1569 ns, UpperFence = 23.8802 ns
+ConfidenceInterval = [23.3155 ns; 23.6654 ns] (CI 99.9%), Margin = 0.1750 ns (0.74% of Mean)
+Skewness = -0.38, Kurtosis = 2.01
+
+
+// **************************
+// Benchmark: PTest.TryCatch: DefaultJob
+// *** Generate *** 
+Unable to find .sln file. Will use current directory /Users/wk/Source/github/Medium to search for project file. If you don't use .sln file on purpose it should not be a problem.
+// Result = Success
+// BinariesDirectoryPath = /Users/wk/Source/github/Medium/Source/Propagation/bin/Release/netcoreapp1.1/BDN.Generated/bin/Release/netcoreapp1.1
+
+// *** Build ***
+// dotnet restore took 2.44s
+// dotnet build took 4.05s
+// Result = Success
+
+// *** Execute ***
+// Launch: 1 / 1
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 4.6.25009.03, 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+Pilot  1: 16 op, 2659551.00 ns, 166.2219 us/op
+Pilot  2: 32 op, 5202425.00 ns, 162.5758 us/op
+Pilot  3: 64 op, 10530329.00 ns, 164.5364 us/op
+Pilot  4: 128 op, 24215162.00 ns, 189.1810 us/op
+Pilot  5: 256 op, 41793214.00 ns, 163.2547 us/op
+Pilot  6: 512 op, 77124727.00 ns, 150.6342 us/op
+Pilot  7: 1024 op, 149321201.00 ns, 145.8215 us/op
+Pilot  8: 2048 op, 306276323.00 ns, 149.5490 us/op
+Pilot  9: 4096 op, 600260046.00 ns, 146.5479 us/op
+
+IdleWarmup  1: 4096 op, 18498.00 ns, 4.5161 ns/op
+IdleWarmup  2: 4096 op, 10639.00 ns, 2.5974 ns/op
+IdleWarmup  3: 4096 op, 9459.00 ns, 2.3093 ns/op
+IdleWarmup  4: 4096 op, 9470.00 ns, 2.3120 ns/op
+IdleWarmup  5: 4096 op, 9456.00 ns, 2.3086 ns/op
+IdleWarmup  6: 4096 op, 10446.00 ns, 2.5503 ns/op
+IdleWarmup  7: 4096 op, 9455.00 ns, 2.3083 ns/op
+
+IdleTarget  1: 4096 op, 9664.00 ns, 2.3594 ns/op
+IdleTarget  2: 4096 op, 10941.00 ns, 2.6711 ns/op
+IdleTarget  3: 4096 op, 11262.00 ns, 2.7495 ns/op
+IdleTarget  4: 4096 op, 10189.00 ns, 2.4875 ns/op
+IdleTarget  5: 4096 op, 9717.00 ns, 2.3723 ns/op
+IdleTarget  6: 4096 op, 10056.00 ns, 2.4551 ns/op
+IdleTarget  7: 4096 op, 9809.00 ns, 2.3948 ns/op
+IdleTarget  8: 4096 op, 9548.00 ns, 2.3311 ns/op
+IdleTarget  9: 4096 op, 9689.00 ns, 2.3655 ns/op
+IdleTarget 10: 4096 op, 9742.00 ns, 2.3784 ns/op
+IdleTarget 11: 4096 op, 9639.00 ns, 2.3533 ns/op
+IdleTarget 12: 4096 op, 10213.00 ns, 2.4934 ns/op
+IdleTarget 13: 4096 op, 9481.00 ns, 2.3147 ns/op
+IdleTarget 14: 4096 op, 9474.00 ns, 2.3130 ns/op
+IdleTarget 15: 4096 op, 9441.00 ns, 2.3049 ns/op
+
+MainWarmup  1: 4096 op, 603294593.00 ns, 147.2887 us/op
+MainWarmup  2: 4096 op, 591142275.00 ns, 144.3218 us/op
+MainWarmup  3: 4096 op, 614756439.00 ns, 150.0870 us/op
+MainWarmup  4: 4096 op, 624073294.00 ns, 152.3616 us/op
+MainWarmup  5: 4096 op, 595939795.00 ns, 145.4931 us/op
+MainWarmup  6: 4096 op, 610849074.00 ns, 149.1331 us/op
+MainWarmup  7: 4096 op, 596709393.00 ns, 145.6810 us/op
+
+MainTarget  1: 4096 op, 598861414.00 ns, 146.2064 us/op
+MainTarget  2: 4096 op, 595919159.00 ns, 145.4881 us/op
+MainTarget  3: 4096 op, 595703148.00 ns, 145.4353 us/op
+MainTarget  4: 4096 op, 595504169.00 ns, 145.3868 us/op
+MainTarget  5: 4096 op, 597145774.00 ns, 145.7875 us/op
+MainTarget  6: 4096 op, 595938811.00 ns, 145.4929 us/op
+MainTarget  7: 4096 op, 599684648.00 ns, 146.4074 us/op
+MainTarget  8: 4096 op, 622337661.00 ns, 151.9379 us/op
+MainTarget  9: 4096 op, 597372653.00 ns, 145.8429 us/op
+MainTarget 10: 4096 op, 597251663.00 ns, 145.8134 us/op
+MainTarget 11: 4096 op, 595566924.00 ns, 145.4021 us/op
+MainTarget 12: 4096 op, 593471357.00 ns, 144.8905 us/op
+MainTarget 13: 4096 op, 594988287.00 ns, 145.2608 us/op
+MainTarget 14: 4096 op, 600805355.00 ns, 146.6810 us/op
+MainTarget 15: 4096 op, 594749801.00 ns, 145.2026 us/op
+
+Result  1: 4096 op, 598851489.67 ns, 146.2040 us/op
+Result  2: 4096 op, 595909234.67 ns, 145.4857 us/op
+Result  3: 4096 op, 595693223.67 ns, 145.4329 us/op
+Result  4: 4096 op, 595494244.67 ns, 145.3843 us/op
+Result  5: 4096 op, 597135849.67 ns, 145.7851 us/op
+Result  6: 4096 op, 595928886.67 ns, 145.4905 us/op
+Result  7: 4096 op, 599674723.67 ns, 146.4050 us/op
+Result  8: 4096 op, 597362728.67 ns, 145.8405 us/op
+Result  9: 4096 op, 597241738.67 ns, 145.8110 us/op
+Result 10: 4096 op, 595556999.67 ns, 145.3997 us/op
+Result 11: 4096 op, 593461432.67 ns, 144.8880 us/op
+Result 12: 4096 op, 594978362.67 ns, 145.2584 us/op
+Result 13: 4096 op, 600795430.67 ns, 146.6786 us/op
+Result 14: 4096 op, 594739876.67 ns, 145.2002 us/op
+GC:  15 0 0 0 61440
+
+
+Mean = 145.6617 us, StdErr = 0.1322 us (0.09%); N = 14, StdDev = 0.4948 us
+Min = 144.8880 us, Q1 = 145.3843 us, Median = 145.4881 us, Q3 = 145.8405 us, Max = 146.6786 us
+IQR = 0.4562 us, LowerFence = 144.7001 us, UpperFence = 146.5248 us
+ConfidenceInterval = [145.1036 us; 146.2198 us] (CI 99.9%), Margin = 0.5581 us (0.38% of Mean)
+Skewness = 0.56, Kurtosis = 2.27
+
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts/results/PTest-report.csv
+  BenchmarkDotNet.Artifacts/results/PTest-report-github.md
+  BenchmarkDotNet.Artifacts/results/PTest-report.html
+
+// * Detailed results *
+PTest.Standard: DefaultJob
+Runtime = .NET Core 4.6.25009.03, 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 7.1104 ns, StdErr = 0.0320 ns (0.45%); N = 14, StdDev = 0.1198 ns
+Min = 6.9383 ns, Q1 = 6.9915 ns, Median = 7.1094 ns, Q3 = 7.2067 ns, Max = 7.3598 ns
+IQR = 0.2152 ns, LowerFence = 6.6688 ns, UpperFence = 7.5294 ns
+ConfidenceInterval = [6.9752 ns; 7.2456 ns] (CI 99.9%), Margin = 0.1352 ns (1.90% of Mean)
+Skewness = 0.36, Kurtosis = 2.09
+
+
+PTest.WithAndReturn: DefaultJob
+Runtime = .NET Core 4.6.25009.03, 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 23.4904 ns, StdErr = 0.0415 ns (0.18%); N = 14, StdDev = 0.1551 ns
+Min = 23.1881 ns, Q1 = 23.4282 ns, Median = 23.5084 ns, Q3 = 23.6090 ns, Max = 23.7116 ns
+IQR = 0.1808 ns, LowerFence = 23.1569 ns, UpperFence = 23.8802 ns
+ConfidenceInterval = [23.3155 ns; 23.6654 ns] (CI 99.9%), Margin = 0.1750 ns (0.74% of Mean)
+Skewness = -0.38, Kurtosis = 2.01
+
+
+PTest.TryCatch: DefaultJob
+Runtime = .NET Core 4.6.25009.03, 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 145.6617 us, StdErr = 0.1322 us (0.09%); N = 14, StdDev = 0.4948 us
+Min = 144.8880 us, Q1 = 145.3843 us, Median = 145.4881 us, Q3 = 145.8405 us, Max = 146.6786 us
+IQR = 0.4562 us, LowerFence = 144.7001 us, UpperFence = 146.5248 us
+ConfidenceInterval = [145.1036 us; 146.2198 us] (CI 99.9%), Margin = 0.5581 us (0.38% of Mean)
+Skewness = 0.56, Kurtosis = 2.27
+
+
+Total time: 00:01:18 (78.99 sec)
+
+// * Summary *
+
+BenchmarkDotNet=v0.10.8, OS=Mac OS X 10.12
+Processor=Intel Core i5-3210M CPU 2.50GHz (Ivy Bridge), ProcessorCount=4
+Frequency=1000000000 Hz, Resolution=1.0000 ns, Timer=UNKNOWN
+dotnet cli version=1.0.3
+  [Host]     : .NET Core 4.6.25009.03, 64bit RyuJIT
+  DefaultJob : .NET Core 4.6.25009.03, 64bit RyuJIT
+
+
+        Method |           Mean |       Error |      StdDev |
+-------------- |---------------:|------------:|------------:|
+      Standard |       7.110 ns |   0.1352 ns |   0.1198 ns |
+ WithAndReturn |      23.490 ns |   0.1750 ns |   0.1551 ns |
+      TryCatch | 145,661.695 ns | 558.1437 ns | 494.7798 ns |
+
+// * Hints *
+Outliers
+  PTest.Standard: Default      -> 1 outlier  was  removed
+  PTest.WithAndReturn: Default -> 1 outlier  was  removed
+  PTest.TryCatch: Default      -> 1 outlier  was  removed
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  1 ns   : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+**
+st.WithAndReturn: Default -> Benchmark was built without optimization enabled (most probably a DEBUG configuration). Please, build it in RELEASE.
+  PTest.TryCatch: Default      -> Benchmark was built without optimization enabled (most probably a DEBUG configuration). Please, build it in RELEASE.
+
+// * Hints *
+Outliers
+  PTest.Standard: Default      -> 1 outlier  was  removed
+  PTest.WithAndReturn: Default -> 2 outliers were removed
+  PTest.TryCatch: Default      -> 1 outlier  was  removed
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  1 ns   : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+
+
+
+PTest.TryCatch: DefaultJob
+Runtime = .NET Core 4.6.25009.03, 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 143.3187 us, StdErr = 0.2184 us (0.15%); N = 13, StdDev = 0.7875 us
+Min = 142.5258 us, Q1 = 142.7323 us, Median = 143.0142 us, Q3 = 143.9805 us, Max = 144.9200 us
+IQR = 1.2481 us, LowerFence = 140.8601 us, UpperFence = 145.8527 us
+ConfidenceInterval = [142.3756 us; 144.2617 us] (CI 99.9%), Margin = 0.9431 us (0.66% of Mean)
+Skewness = 0.86, Kurtosis = 2.13
+
+
+Total time: 00:01:36 (96.47 sec)
+
+// * Summary *
+
+BenchmarkDotNet=v0.10.8, OS=Mac OS X 10.12
+Processor=Intel Core i5-3210M CPU 2.50GHz (Ivy Bridge), ProcessorCount=4
+Frequency=1000000000 Hz, Resolution=1.0000 ns, Timer=UNKNOWN
+dotnet cli version=1.0.3
+  [Host]     : .NET Core 4.6.25009.03, 64bit RyuJITDEBUG
+  DefaultJob : .NET Core 4.6.25009.03, 64bit RyuJIT
+
+
+        Method |           Mean |       Error |      StdDev |
+-------------- |---------------:|------------:|------------:|
+      Standard |       7.984 ns |   0.1940 ns |   0.1905 ns |
+ WithAndReturn |      24.444 ns |   0.6157 ns |   0.9025 ns |
+      TryCatch | 143,318.670 ns | 943.0623 ns | 787.4997 ns |
+
+// * Warnings *
+Environment
+  PTest.Standard: Default      -> Benchmark was built without optimization enabled (most probably a DEBUG configuration). Please, build it in RELEASE.
+  PTest.WithAndReturn: Default -> Benchmark was built without optimization enabled (most probably a DEBUG configuration). Please, build it in RELEASE.
+  PTest.TryCatch: Default      -> Benchmark was built without optimization enabled (most probably a DEBUG configuration). Please, build it in RELEASE.
+
+// * Hints *
+Outliers
+  PTest.WithAndReturn: Default -> 2 outliers were removed
+  PTest.TryCatch: Default      -> 2 outliers were removed
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  1 ns   : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+/Medium to search for project file. If you don't use .sln file on purpose it should not be a problem.
+// Result = Success
+// BinariesDirectoryPath = /Users/wk/Source/github/Medium/Source/Propagation/bin/Debug/netcoreapp1.1/BDN.Generated/bin/Release/netcoreapp1.1
+
+// *** Build ***
+// dotnet restore took 2.43s
+// dotnet build took 4.26s
+// Result = Success
+
+// *** Execute ***
+// Launch: 1 / 1
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 4.6.25009.03, 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+Pilot  1: 16 op, 3002821.00 ns, 187.6763 us/op
+Pilot  2: 32 op, 5090108.00 ns, 159.0659 us/op
+Pilot  3: 64 op, 10534298.00 ns, 164.5984 us/op
+Pilot  4: 128 op, 19797891.00 ns, 154.6710 us/op
+Pilot  5: 256 op, 42690806.00 ns, 166.7610 us/op
+Pilot  6: 512 op, 75652989.00 ns, 147.7597 us/op
+Pilot  7: 1024 op, 147319675.00 ns, 143.8669 us/op
+Pilot  8: 2048 op, 293720047.00 ns, 143.4180 us/op
+Pilot  9: 4096 op, 586061416.00 ns, 143.0814 us/op
+
+IdleWarmup  1: 4096 op, 17510.00 ns, 4.2749 ns/op
+IdleWarmup  2: 4096 op, 9610.00 ns, 2.3462 ns/op
+IdleWarmup  3: 4096 op, 9504.00 ns, 2.3203 ns/op
+IdleWarmup  4: 4096 op, 9518.00 ns, 2.3237 ns/op
+IdleWarmup  5: 4096 op, 9504.00 ns, 2.3203 ns/op
+IdleWarmup  6: 4096 op, 9843.00 ns, 2.4031 ns/op
+IdleWarmup  7: 4096 op, 9550.00 ns, 2.3315 ns/op
+
+IdleTarget  1: 4096 op, 9693.00 ns, 2.3665 ns/op
+IdleTarget  2: 4096 op, 9977.00 ns, 2.4358 ns/op
+IdleTarget  3: 4096 op, 9618.00 ns, 2.3481 ns/op
+IdleTarget  4: 4096 op, 9632.00 ns, 2.3516 ns/op
+IdleTarget  5: 4096 op, 9596.00 ns, 2.3428 ns/op
+IdleTarget  6: 4096 op, 9498.00 ns, 2.3188 ns/op
+IdleTarget  7: 4096 op, 9510.00 ns, 2.3218 ns/op
+IdleTarget  8: 4096 op, 9435.00 ns, 2.3035 ns/op
+IdleTarget  9: 4096 op, 9432.00 ns, 2.3027 ns/op
+IdleTarget 10: 4096 op, 9436.00 ns, 2.3037 ns/op
+IdleTarget 11: 4096 op, 9511.00 ns, 2.3220 ns/op
+IdleTarget 12: 4096 op, 10817.00 ns, 2.6409 ns/op
+IdleTarget 13: 4096 op, 11528.00 ns, 2.8145 ns/op
+IdleTarget 14: 4096 op, 10821.00 ns, 2.6418 ns/op
+IdleTarget 15: 4096 op, 10762.00 ns, 2.6274 ns/op
+IdleTarget 16: 4096 op, 9693.00 ns, 2.3665 ns/op
+IdleTarget 17: 4096 op, 10701.00 ns, 2.6125 ns/op
+IdleTarget 18: 4096 op, 9704.00 ns, 2.3691 ns/op
+IdleTarget 19: 4096 op, 9600.00 ns, 2.3438 ns/op
+IdleTarget 20: 4096 op, 9441.00 ns, 2.3049 ns/op
+
+MainWarmup  1: 4096 op, 580255896.00 ns, 141.6640 us/op
+MainWarmup  2: 4096 op, 579776842.00 ns, 141.5471 us/op
+MainWarmup  3: 4096 op, 578802467.00 ns, 141.3092 us/op
+MainWarmup  4: 4096 op, 591420443.00 ns, 144.3898 us/op
+MainWarmup  5: 4096 op, 585484677.00 ns, 142.9406 us/op
+MainWarmup  6: 4096 op, 609981427.00 ns, 148.9212 us/op
+MainWarmup  7: 4096 op, 579399041.00 ns, 141.4548 us/op
+
+MainTarget  1: 4096 op, 581799555.00 ns, 142.0409 us/op
+MainTarget  2: 4096 op, 582828076.00 ns, 142.2920 us/op
+MainTarget  3: 4096 op, 578264966.00 ns, 141.1780 us/op
+MainTarget  4: 4096 op, 578572878.00 ns, 141.2531 us/op
+MainTarget  5: 4096 op, 578181483.00 ns, 141.1576 us/op
+MainTarget  6: 4096 op, 577686481.00 ns, 141.0367 us/op
+MainTarget  7: 4096 op, 574798950.00 ns, 140.3318 us/op
+MainTarget  8: 4096 op, 598536427.00 ns, 146.1271 us/op
+MainTarget  9: 4096 op, 578182705.00 ns, 141.1579 us/op
+MainTarget 10: 4096 op, 580184369.00 ns, 141.6466 us/op
+MainTarget 11: 4096 op, 580826711.00 ns, 141.8034 us/op
+MainTarget 12: 4096 op, 582667603.00 ns, 142.2528 us/op
+MainTarget 13: 4096 op, 575158119.00 ns, 140.4195 us/op
+MainTarget 14: 4096 op, 581846022.00 ns, 142.0523 us/op
+MainTarget 15: 4096 op, 578118991.00 ns, 141.1423 us/op
+
+Result  1: 4096 op, 581789634.75 ns, 142.0385 us/op
+Result  2: 4096 op, 582818155.75 ns, 142.2896 us/op
+Result  3: 4096 op, 578255045.75 ns, 141.1755 us/op
+Result  4: 4096 op, 578562957.75 ns, 141.2507 us/op
+Result  5: 4096 op, 578171562.75 ns, 141.1552 us/op
+Result  6: 4096 op, 577676560.75 ns, 141.0343 us/op
+Result  7: 4096 op, 574789029.75 ns, 140.3294 us/op
+Result  8: 4096 op, 578172784.75 ns, 141.1555 us/op
+Result  9: 4096 op, 580174448.75 ns, 141.6442 us/op
+Result 10: 4096 op, 580816790.75 ns, 141.8010 us/op
+Result 11: 4096 op, 582657682.75 ns, 142.2504 us/op
+Result 12: 4096 op, 575148198.75 ns, 140.4170 us/op
+Result 13: 4096 op, 581836101.75 ns, 142.0498 us/op
+Result 14: 4096 op, 578109070.75 ns, 141.1399 us/op
+GC:  15 0 0 0 61440
+
+
+Mean = 141.4094 us, StdErr = 0.1669 us (0.12%); N = 14, StdDev = 0.6245 us
+Min = 140.3294 us, Q1 = 141.1399 us, Median = 141.2131 us, Q3 = 142.0385 us, Max = 142.2896 us
+IQR = 0.8986 us, LowerFence = 139.7920 us, UpperFence = 143.3863 us
+ConfidenceInterval = [140.7049 us; 142.1138 us] (CI 99.9%), Margin = 0.7045 us (0.50% of Mean)
+Skewness = -0.15, Kurtosis = 1.79
+
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts/results/PTest-report.csv
+  BenchmarkDotNet.Artifacts/results/PTest-report-github.md
+  BenchmarkDotNet.Artifacts/results/PTest-report.html
+
+// * Detailed results *
+PTest.Standard: DefaultJob
+Runtime = .NET Core 4.6.25009.03, 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 7.1426 ns, StdErr = 0.0581 ns (0.81%); N = 71, StdDev = 0.4899 ns
+Min = 6.5329 ns, Q1 = 6.7631 ns, Median = 6.9845 ns, Q3 = 7.4604 ns, Max = 8.6333 ns
+IQR = 0.6973 ns, LowerFence = 5.7172 ns, UpperFence = 8.5063 ns
+ConfidenceInterval = [6.9429 ns; 7.3423 ns] (CI 99.9%), Margin = 0.1997 ns (2.80% of Mean)
+Skewness = 1.14, Kurtosis = 3.79
+
+
+PTest.WithAndReturn: DefaultJob
+Runtime = .NET Core 4.6.25009.03, 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 23.4339 ns, StdErr = 0.1460 ns (0.62%); N = 40, StdDev = 0.9232 ns
+Min = 22.5026 ns, Q1 = 22.7471 ns, Median = 23.0034 ns, Q3 = 23.9392 ns, Max = 25.8196 ns
+IQR = 1.1921 ns, LowerFence = 20.9589 ns, UpperFence = 25.7274 ns
+ConfidenceInterval = [22.9145 ns; 23.9533 ns] (CI 99.9%), Margin = 0.5194 ns (2.22% of Mean)
+Skewness = 1.08, Kurtosis = 3.06
+
+
+PTest.TryCatch: DefaultJob
+Runtime = .NET Core 4.6.25009.03, 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 141.4094 us, StdErr = 0.1669 us (0.12%); N = 14, StdDev = 0.6245 us
+Min = 140.3294 us, Q1 = 141.1399 us, Median = 141.2131 us, Q3 = 142.0385 us, Max = 142.2896 us
+IQR = 0.8986 us, LowerFence = 139.7920 us, UpperFence = 143.3863 us
+ConfidenceInterval = [140.7049 us; 142.1138 us] (CI 99.9%), Margin = 0.7045 us (0.50% of Mean)
+Skewness = -0.15, Kurtosis = 1.79
+
+
+Total time: 00:02:04 (124.46 sec)
+
+// * Summary *
+
+BenchmarkDotNet=v0.10.8, OS=Mac OS X 10.12
+Processor=Intel Core i5-3210M CPU 2.50GHz (Ivy Bridge), ProcessorCount=4
+Frequency=1000000000 Hz, Resolution=1.0000 ns, Timer=UNKNOWN
+dotnet cli version=1.0.3
+  [Host]     : .NET Core 4.6.25009.03, 64bit RyuJITDEBUG
+  DefaultJob : .NET Core 4.6.25009.03, 64bit RyuJIT
+
+
+        Method |           Mean |       Error |      StdDev |         Median |
+-------------- |---------------:|------------:|------------:|---------------:|
+      Standard |       7.143 ns |   0.1997 ns |   0.4899 ns |       6.984 ns |
+ WithAndReturn |      23.434 ns |   0.5194 ns |   0.9232 ns |      23.003 ns |
+      TryCatch | 141,409.355 ns | 704.4723 ns | 624.4963 ns | 141,213.135 ns |
+
+// * Warnings *
+Environment
+  PTest.Standard: Default      -> Benchmark was built without optimization enabled (most probably a DEBUG configuration). Please, build it in RELEASE.
+  PTest.WithAndReturn: Default -> Benchmark was built without optimization enabled (most probably a DEBUG configuration). Please, build it in RELEASE.
+  PTest.TryCatch: Default      -> Benchmark was built without optimization enabled (most probably a DEBUG configuration). Please, build it in RELEASE.
+
+// * Hints *
+Outliers
+  PTest.Standard: Default      -> 4 outliers were removed
+  PTest.WithAndReturn: Default -> 2 outliers were removed
+  PTest.TryCatch: Default      -> 1 outlier  was  removed
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  Median : Value separating the higher half of all measurements (50th percentile)
+  1 ns   : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
