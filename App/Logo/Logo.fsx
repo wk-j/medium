@@ -16,12 +16,12 @@ type DrawSettings =
         Background: string }
       
       static member Default() = 
-        { FontSize = 45.0f 
+        { FontSize = 50.0f 
           FontFamily = "Optima"
           Foreground =  "White"
-          Padding = 20.0f 
+          Padding = 30.0f 
           NoSquare = true 
-          Background = "DimGray" }
+          Background = "Green" }
 
 let private startDraw(text: string, font: Font, color: Color, back: Color, padding, square) =
 

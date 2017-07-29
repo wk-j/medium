@@ -1,3 +1,3 @@
 #load "../App/Logo/Logo.fsx"
 
-Logo.drawText("W", "Logo/W.png", Logo.DrawSettings.Default())
+Logo.drawText("W", "_resource/W.png", Logo.DrawSettings.Default())
