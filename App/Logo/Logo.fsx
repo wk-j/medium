@@ -20,7 +20,7 @@ type DrawSettings =
           FontFamily = "Optima"
           Foreground =  "White"
           Padding = 30.0f 
-          NoSquare = true 
+          NoSquare = false
           Background = "Green" }
 
 let private startDraw(text: string, font: Font, color: Color, back: Color, padding, square) =
