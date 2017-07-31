@@ -10,7 +10,7 @@ module Seq =
   ///    Seq.groupWhen isOdd [3;3;2;4;1;2] = seq [[3]; [3; 2; 4]; [1; 2]]
   let groupWhen f (input:seq<_>) = seq {
     use en = input.GetEnumerator()
-    let running = ref true
+    let mutable running = true
     let mutable index = -1
     
     // Generate a group starting with the current element. Stops generating
@@ -20,12 +20,12 @@ module Seq =
         if en.MoveNext() then
           index <- index + 1
           if not (f en.Current index) then yield! group() 
-        else running := false ]
+        else running <- false ]
     
     if en.MoveNext() then
       index <- index + 1
       // While there are still elements, start a new group
-      while running.Value do
+      while running do
         yield group() |> Seq.ofList }
 
 [3;3;2;4;1;2] |> Seq.groupWhen (fun n i -> n%2 = 1) |> Seq.toList |> printfn "%A"
