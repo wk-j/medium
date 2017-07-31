@@ -3,14 +3,21 @@ IEnumerable<IEnumerable<T>> groupWhen<T>( Func<T, int, bool> f, IEnumerable<T> i
     var index = - 1;
     var running = true;
     var en = input.GetEnumerator();
+
     IEnumerable<T> group() {
-        Console.WriteLine(en.Current);
+        Console.Write("-" + en.Current);
         yield return en.Current;
         if(en.MoveNext()) {
             index ++;
-            if  (!f(en.Current, index)) 
-                foreach(var g in group()) yield return g;
+            if  (!f(en.Current, index)) { 
+                foreach(var g in group())  {
+                    Console.Write("+" + g);
+                    yield return g;
+                }
+                Console.WriteLine();
+            }
         }else { 
+            Console.WriteLine(".");
             running = false;
         }
     }
@@ -20,6 +27,6 @@ IEnumerable<IEnumerable<T>> groupWhen<T>( Func<T, int, bool> f, IEnumerable<T> i
     }
 }
 
-var a = new [] { "Hek", "John", "John", "J" };
-var rs = groupWhen((x,i) => x == "John" , a);
-Console.WriteLine(string.Join(" -- ", rs.Select(x => string.Join("|", x))));
+var a = new [] { 1,2,3,4,5,6 };
+var rs = groupWhen((x,i) => x == 3 , a);
+Console.WriteLine(string.Join(" - ", rs.Select(x => string.Join("+", x))));
