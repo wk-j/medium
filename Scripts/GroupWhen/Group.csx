@@ -28,5 +28,6 @@ IEnumerable<IEnumerable<T>> groupWhen<T>( Func<T, int, bool> f, IEnumerable<T> i
 }
 
 var a = new [] { 1,2,3,4,5,6 };
-var rs = groupWhen((x,i) => x == 3 , a);
+var rs = groupWhen((x,i) => x == 5 , a);
 Console.WriteLine(string.Join(" - ", rs.Select(x => string.Join("+", x))));
+
