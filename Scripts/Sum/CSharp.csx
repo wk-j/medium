@@ -1,9 +1,15 @@
+#r "System.Data"
+#r "System.VisualBasic"
+
+// https://gist.github.com/anonymous/55540e116743036e5f17d575922cb9de
+
 using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
+
 static class Module1
 {
 	public static List<string[]> Subsets(string[] Input)
