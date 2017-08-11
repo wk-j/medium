@@ -1,6 +1,6 @@
 
 let rec comb n l =
-  match (n,l) with
+  match (n, l) with
   | (0, _) -> [[]]
   | (_, []) -> []
   | (n, x :: xs) ->
@@ -8,11 +8,9 @@ let rec comb n l =
       let noX = comb n xs
       withX @ noX
 
-#time
 [5;5;6;8;8;12;8;10] 
 |> comb 5 
 |> List.filter (List.sum >> (=) 40) 
 |> printfn "%A"
-#time
 
 // [[5; 5; 8; 12; 10]; [5; 5; 8; 12; 10]; [5; 5; 12; 8; 10]; [6; 8; 8; 8; 10]]
