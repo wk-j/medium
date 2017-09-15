@@ -7,4 +7,7 @@ let rec comb n l =
       let noX = comb n xs
       useX @ noX
 
-[5;5;6;8;8;12;8;10] |> comb 5 |> List.filter (List.sum >> (=) 40) |> printfn "%A"
+[5;5;6;8;8;12;8;10] 
+|> comb 5 
+|> List.filter (List.sum >> (=) 40) 
+|> printfn "%A"

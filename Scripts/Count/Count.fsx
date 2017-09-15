@@ -10,5 +10,14 @@ e.Count()    |> printfn "%A"
 #time
 
 #time
+
+#time
 list.Count      |> printfn "%A"  
 #time
+
+
+
+
+
+
+"Hello, world!" |> printfn "%A"
