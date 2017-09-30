@@ -1,5 +1,3 @@
-
-
 let rec comb n l =
   match (n, l) with
   | (0, _) -> [[]]
