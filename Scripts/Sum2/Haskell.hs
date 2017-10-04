@@ -1,18 +1,17 @@
 -- stack runghc --package strict
-
-f :: [t] -> [[t]]
 f [] = [[]]
 f (x:xs) = f xs ++ map (x:) (f xs)
 
 (|>) f x = x f
 
-main :: IO ()
 main = do
-    let rs1 = 
-           f [2,45,67,119,1,14,299::Int]
-           |> filter ((<=331) . sum) 
-           |> filter (\x -> length x > 1)
-    print rs1
+    f [2,45,67,119,1,14,299::Int]
+    |> filter ((<= 331) . sum) 
+    |> filter ((> 1) . length)
+    |> print
+
+
+
 
 {-|
 [[14,299],[1,299],[1,14],[1,14,299],[119,14],[119,1],[119,1,14],[67,14],[67,1],
