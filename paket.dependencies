@@ -4,3 +4,4 @@ nuget LanguageExt.Core
 nuget System.Runtime
 nuget LinqOptimizer.FSharp
 nuget Microsoft.VisualBasic
+nuget FSharp.Data
