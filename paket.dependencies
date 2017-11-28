@@ -5,3 +5,5 @@ nuget System.Runtime
 nuget LinqOptimizer.FSharp
 nuget Microsoft.VisualBasic
 nuget FSharp.Data
+
+github eiriktsarpalis/TypeShape:2.10 src/TypeShape/TypeShape.fs
