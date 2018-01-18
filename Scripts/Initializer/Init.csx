@@ -15,3 +15,5 @@ var list = new List<int> {
 WriteLine(list.Where(x => x == 100).Count() == 10);
 WriteLine(list.Where(x => x == 200).Count() == 10);
 WriteLine(list.Where(x => x == 300).Count() == 10);
+
+
