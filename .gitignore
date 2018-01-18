@@ -7,3 +7,5 @@ _build
 _resource
 BenchmarkDotNet.Artifacts
 .idea
+.DS_Store
+paket-files
